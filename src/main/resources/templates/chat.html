@@ -56,6 +56,9 @@
         messageElement.className="border-bottom mb-1";
         chat.appendChild(messageElement);
         chat.scrollTop=chat.scrollHeight;
+        if(message.sender === document.getElementById("senderInput").value){
+    messageElement.style.textAlign="right";
+}
 
     }
 
